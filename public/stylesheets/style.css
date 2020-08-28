@@ -1,0 +1,9 @@
+.card-img-top {
+  height: 200px;
+}
+h4 {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
