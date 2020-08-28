@@ -1,0 +1,54 @@
+<!-- ./view/index.handlebars -->
+<div class="container">
+  <div class="row">
+    <h4 class="col align-items-center">你想對誰說什麼</h4>
+  </div>
+  <!---show-person -->
+  <div class="row">
+    <div class="col-md-12 col-12 mx-auto">
+      <div class="card-columns">
+        <form method="POST" action="/">
+          <div class="card mb-4">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+              class="card-img-top" alt="engineer">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="engineer" name="target" value="engineer">
+              <label class="form-check-label">工程師</label>
+            </div>
+          </div>
+          <!--desinger -->
+          <div class="card mb-4">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+              class="card-img-top" alt="engineer">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="desinger" name="target" value="desinger">
+              <label class=" form-check-label">設計師</label>
+            </div>
+          </div>
+          <!--創業家 -->
+          <div class="card mb-4">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+              class="card-img-top" alt="engineer">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="entrepreneur" name="target" value="entrepreneur">
+              <label class=" form-check-label">創業家</label>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- show-button-->
+  <div class="row">
+    <div class="buttonInput col-2">
+      <button type="submit" class="btn btn-primary">產生幹話</button>
+    </div>
+    {{#if nosensewords}}
+    <div class="textarea col-10">
+      <textarea class="form-control" id="textarea" rows="3">{{nosensewords}}</textarea>
+    </div>
+    {{/if}}
+  </div>
+</div>
+</form>
+</div>
+</div
