@@ -55,10 +55,9 @@ function generateWords(options) {
   console.log('box:', initBox)
   // remove things user do not need
 
-  // start generating password
 
 
-  // return the generated password
+  // return the generated word
   return initBox
 }
 // export  generateWords function for other file use

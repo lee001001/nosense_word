@@ -27,9 +27,9 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-  const nosensewords = generateWords(req.body)
+  const nosenseWords = generateWords(req.body)
 
-  res.render('index', { nosensewords: nosensewords })
+  res.render('index', { nosensewords: nosenseWords })
 })
 
 // starts the express server and listening for connections.
